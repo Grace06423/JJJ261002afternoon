@@ -3,20 +3,26 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Downloads\\Modless\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{15EE9FA9-C054-72F4-4434-D85F4A3E9DA6}|Modless.csproj|c:\\users\\user\\downloads\\modless\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15EE9FA9-C054-72F4-4434-D85F4A3E9DA6}|Modless.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{15EE9FA9-C054-72F4-4434-D85F4A3E9DA6}|Modless.csproj|C:\\Users\\User\\Downloads\\Modless\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{15EE9FA9-C054-72F4-4434-D85F4A3E9DA6}|Modless.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{15EE9FA9-C054-72F4-4434-D85F4A3E9DA6}|Modless.csproj|c:\\users\\user\\downloads\\modless\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{15EE9FA9-C054-72F4-4434-D85F4A3E9DA6}|Modless.csproj|solutionrelative:mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{15EE9FA9-C054-72F4-4434-D85F4A3E9DA6}|Modless.csproj|c:\\users\\user\\downloads\\modless\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15EE9FA9-C054-72F4-4434-D85F4A3E9DA6}|Modless.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Microsoft.Common.CurrentVersiona.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{15EE9FA9-C054-72F4-4434-D85F4A3E9DA6}|Modless.csproj|c:\\users\\user\\downloads\\modless\\command.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{15EE9FA9-C054-72F4-4434-D85F4A3E9DA6}|Modless.csproj|solutionrelative:command.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15EE9FA9-C054-72F4-4434-D85F4A3E9DA6}|Modless.csproj|C:\\Users\\User\\Downloads\\Modless\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{15EE9FA9-C054-72F4-4434-D85F4A3E9DA6}|Modless.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +32,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,52 +44,80 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "Microsoft.Common.CurrentVersion.targets",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\18\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\18\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ViewState": "AgIAAHkNAAAAAAAAAAAAAIMNAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2026-10-02T07:47:35.488Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Microsoft.Common.CurrentVersiona.targets",
+              "DocumentMoniker": "C:\\Users\\User\\Microsoft.Common.CurrentVersiona.targets",
+              "RelativeDocumentMoniker": "..\\..\\Microsoft.Common.CurrentVersiona.targets",
+              "ToolTip": "C:\\Users\\User\\Microsoft.Common.CurrentVersiona.targets",
+              "RelativeToolTip": "..\\..\\Microsoft.Common.CurrentVersiona.targets",
+              "ViewState": "AgIAAG8NAAAAAAAAAAAAAIANAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2026-10-02T07:45:14.488Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "MainForm.Designer.cs",
               "DocumentMoniker": "C:\\Users\\User\\Downloads\\Modless\\MainForm.Designer.cs",
               "RelativeDocumentMoniker": "MainForm.Designer.cs",
               "ToolTip": "C:\\Users\\User\\Downloads\\Modless\\MainForm.Designer.cs",
               "RelativeToolTip": "MainForm.Designer.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAxwCcAAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAACYAAAAAAAAAAAAjwDoAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-02T01:35:20.334Z"
+              "WhenOpened": "2026-10-02T01:35:20.334Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "MainForm.cs",
               "DocumentMoniker": "C:\\Users\\User\\Downloads\\Modless\\MainForm.cs",
               "RelativeDocumentMoniker": "MainForm.cs",
               "ToolTip": "C:\\Users\\User\\Downloads\\Modless\\MainForm.cs",
               "RelativeToolTip": "MainForm.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAswD4AAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAALcAAAAAAAAAAAAAwMsAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-29T02:38:20.467Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MainForm.cs [Design]",
+              "DocumentIndex": 5,
+              "Title": "MainForm.cs [\uB514\uC790\uC778]",
               "DocumentMoniker": "C:\\Users\\User\\Downloads\\Modless\\MainForm.cs",
               "RelativeDocumentMoniker": "MainForm.cs",
-              "ToolTip": "C:\\Users\\User\\Downloads\\Modless\\MainForm.cs [Design]",
-              "RelativeToolTip": "MainForm.cs [Design]",
+              "ToolTip": "C:\\Users\\User\\Downloads\\Modless\\MainForm.cs [\uB514\uC790\uC778]",
+              "RelativeToolTip": "MainForm.cs [\uB514\uC790\uC778]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-02T01:36:52.015Z",
-              "EditorCaption": " [Design]"
+              "EditorCaption": " [\uB514\uC790\uC778]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Command.cs",
               "DocumentMoniker": "C:\\Users\\User\\Downloads\\Modless\\Command.cs",
               "RelativeDocumentMoniker": "Command.cs",
               "ToolTip": "C:\\Users\\User\\Downloads\\Modless\\Command.cs",
               "RelativeToolTip": "Command.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAIwCIAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACIAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-28T10:40:07.101Z"
+              "WhenOpened": "2026-09-28T10:40:07.101Z",
+              "EditorCaption": ""
             }
           ]
         }

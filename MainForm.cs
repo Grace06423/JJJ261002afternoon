@@ -5,8 +5,8 @@ using Autodesk.Revit.UI.Selection;
 using Autodesk.Revit.DB.Architecture;
 using Autodesk.Revit.DB.Structure;
 
-using System.Text;
 using System;
+using System.Text;
 using System.Collections.Generic;
 using System.Data;
 using System.Diagnostics;
@@ -72,6 +72,9 @@ namespace Modless
         // 번호표에 적어 둔 할 일 (내 차례가 되면 실행됨)
         private Action<UIDocument, Document> _action;
         //
+
+
+
         public MainForm()
         {
             InitializeComponent();
@@ -81,6 +84,7 @@ namespace Modless
         }
 
         // ───────────── 버튼 ─────────────
+
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -149,6 +153,68 @@ namespace Modless
             // 번호표 기계 철거
             _exEvent.Dispose();
             base.OnFormClosed(e);
+        }
+
+
+        //[바닥 생성 함수]
+        //XYZ 좌표 리스트를 받아 CurveLoop로 반환하는 함수 작성
+        //0부터 시작하는 int값이 3이 되면 사각형의 마지막 포인트이므로 사각형의 포인트 개수-1의 값과 동일할 경우 라인 형성을 종료하게 함수 설정
+        //CreateBound함수로 형성한 라인을 cl에 Append하여 CurveLoop 형성
+        public static CurveLoop GetCurveLoopfromPts(List<XYZ> points)
+        {
+            CurveLoop cl = new CurveLoop();
+            for (int i = 0; i < points.Count; i++)
+            {
+                if (i < points.Count - 1)
+                {
+                    Line line = Line.CreateBound(points[i], points[i + 1]);
+                    cl.Append(line);
+                }
+                else if (i == points.Count - 1)
+                {
+                    Line line = Line.CreateBound(points[i], points[0]);
+                    cl.Append(line);
+                }
+            }
+            return cl;
+        }
+
+        //형성한 CurveLoop 리스트를 받아 바닥을 생성하는 함수 작성
+        public static void CreateFloor(Document doc, IList<CurveLoop> cl, ElementId floorid, ElementId levelid, double t)
+        {
+            using (Transaction trans = new Transaction(doc, "바닥을 생성합니다."))
+            {
+                trans.Start();
+                Floor f = Floor.Create(doc, cl, floorid, levelid);
+                // 바닥 두께만큼 높이를 올려서 바닥을 생성
+                Parameter heightParam = f.get_Parameter(BuiltInParameter.FLOOR_HEIGHTABOVELEVEL_PARAM);
+                heightParam.Set(t);
+                trans.Commit();
+            }
+        }
+
+        //[벽 생성 함수]
+        public static List<Curve> GetCurveListFromPts(List<XYZ> points)
+        {
+            List<Curve> curves = new List<Curve>();
+            for (int i = 0; i < points.Count - 1; i++)
+            {
+                Line line = Line.CreateBound(points[i], points[i + 1]);
+                curves.Add(line);
+            }
+            return curves;
+        }
+        public static void CreateWall(Document doc, Curve curves, WallType wt, Level level, double t, bool isSTR)
+        {
+            using (Transaction trans = new Transaction(doc, "벽 작성하기"))
+            {
+                trans.Start();
+
+                Wall wall = Wall.Create(doc, curves, wt.Id, level.Id, t / 304.8, 0, false, isSTR);
+
+                trans.Commit();
+            }
+
         }
     }
 }
